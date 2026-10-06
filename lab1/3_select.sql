@@ -1,3 +1,5 @@
+USE car_rental;
+
 SELECT *
 FROM cars;
 

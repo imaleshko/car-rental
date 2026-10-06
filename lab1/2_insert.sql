@@ -14,20 +14,20 @@ VALUES ('Олександр', 'Мельник', 'Іванович', 'BXT123456',
 
 INSERT INTO models (name, make, capacity, price_per_day, body)
 VALUES ('Camry', 'Toyota', 5, 1200.00, 'sedan'),
-       ('X5', 'BMW', 5, 2500.00, 'suv'),
-       ('Golf', 'Volkswagen', 5, 900.00, 'hatchback'),
-       ('Mustang', 'Ford', 4, 2000.00, 'coupe'),
-       ('Octavia', 'Skoda', 5, 1000.00, 'sedan'),
-       ('Tucson', 'Hyundai', 5, 1300.00, 'suv'),
-       ('Focus', 'Ford', 5, 850.00, 'hatchback'),
-       ('Passat', 'Volkswagen', 5, 1100.00, 'sedan'),
+       ('Corolla', 'Toyota', 5, 900.00, 'sedan'),
        ('RAV4', 'Toyota', 5, 1400.00, 'suv'),
-       ('Civic', 'Honda', 5, 950.00, 'sedan'),
-       ('A6', 'Audi', 5, 1600.00, 'sedan'),
-       ('G-Class', 'Mercedes-Benz', 5, 3500.00, 'suv'),
-       ('911', 'Porsche', 2, 4000.00, 'coupe'),
-       ('Sportage', 'Kia', 5, 1200.00, 'suv'),
-       ('Megane', 'Renault', 5, 800.00, 'hatchback');
+       ('Yaris Cross', 'Toyota', 5, 1100.00, 'suv'),
+       ('X5', 'BMW', 5, 2500.00, 'suv'),
+       ('X3', 'BMW', 5, 2000.00, 'suv'),
+       ('M4', 'BMW', 4, 2800.00, 'coupe'),
+       ('Golf', 'Volkswagen', 5, 900.00, 'hatchback'),
+       ('Passat', 'Volkswagen', 5, 1200.00, 'sedan'),
+       ('ID.4', 'Volkswagen', 5, 1000, 'suv'),
+       ('Mustang', 'Ford', 4, 2000.00, 'coupe'),
+       ('Focus', 'Ford', 5, 850.00, 'hatchback'),
+       ('A6', 'Audi', 5, 2000.00, 'sedan'),
+       ('911', 'Porsche', 2, 4500.00, 'coupe'),
+       ('718 Cayman', 'Porsche', 2, 3200.00, 'sedan');
 
 INSERT INTO cars (registration_plate, year_of_manufacture, colour, car_condition, mileage, model_id)
 VALUES ('AO1111AA', 2020, 'Чорний', 'Чудовий', 45000, 1),

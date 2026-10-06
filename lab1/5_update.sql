@@ -1,3 +1,5 @@
+USE car_rental;
+
 UPDATE rental_agreements
 SET return_date = '2026-12-01'
 WHERE rental_agreement_id = 10;

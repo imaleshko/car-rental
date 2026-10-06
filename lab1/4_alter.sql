@@ -1,3 +1,5 @@
+USE car_rental;
+
 ALTER TABLE clients
     ADD COLUMN phone VARCHAR(15) NULL;
 

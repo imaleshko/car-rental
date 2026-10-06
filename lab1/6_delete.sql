@@ -1,3 +1,5 @@
+USE car_rental;
+
 DELETE
 FROM rental_agreements
 WHERE rental_agreement_id = 5;
