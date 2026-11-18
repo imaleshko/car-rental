@@ -6,7 +6,6 @@ FROM cars AS c
          LEFT JOIN rental_agreements AS a ON c.car_id = a.car_id
 ORDER BY a.agreement_date;
 
-
 SELECT c.first_name,
        c.last_name,
        a.agreement_date

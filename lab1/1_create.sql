@@ -1,4 +1,7 @@
+DROP DATABASE car_rental;
+
 CREATE DATABASE IF NOT EXISTS car_rental;
+
 USE car_rental;
 
 CREATE TABLE IF NOT EXISTS clients (
@@ -27,7 +30,7 @@ CREATE TABLE IF NOT EXISTS cars (
     car_condition       ENUM ('Чудовий', 'Гарний', 'В ремонті') NOT NULL DEFAULT 'Чудовий',
     mileage             MEDIUMINT UNSIGNED                      NOT NULL,
     model_id            INT,
-    CONSTRAINT fk_cars_models FOREIGN KEY (model_id) REFERENCES models (model_id) ON DELETE RESTRICT
+    CONSTRAINT fk_cars_models FOREIGN KEY (model_id) REFERENCES models(model_id) ON DELETE RESTRICT
 );
 
 CREATE TABLE IF NOT EXISTS rental_agreements (
@@ -38,6 +41,6 @@ CREATE TABLE IF NOT EXISTS rental_agreements (
     agreement_duration_days SMALLINT UNSIGNED       NOT NULL CHECK (agreement_duration_days < 366),
     agreement_cost          DECIMAL(10, 2) UNSIGNED NOT NULL,
     return_date             DATE                    NULL,
-    CONSTRAINT fk_rental_agreements_clients FOREIGN KEY (client_id) REFERENCES clients (client_id) ON DELETE RESTRICT,
-    CONSTRAINT fk_rental_agreements_cars FOREIGN KEY (car_id) REFERENCES cars (car_id) ON DELETE RESTRICT
+    CONSTRAINT fk_rental_agreements_clients FOREIGN KEY (client_id) REFERENCES clients(client_id) ON DELETE RESTRICT,
+    CONSTRAINT fk_rental_agreements_cars FOREIGN KEY (car_id) REFERENCES cars(car_id) ON DELETE RESTRICT
 );
